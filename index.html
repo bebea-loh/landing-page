@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!-- Primeira linha obrigatória: informa ao navegador que é HTML5 -->
+<html lang="pt-br">
+<!-- lang define o idioma: importante para acessibilidade e SEO -->
+
+<head>
+    <!-- O head guarda configurações que NÃO aparecem na página -->
+    <meta charset="UTF-8">
+    <!-- charset garante que acentos (ç, ã, é) apareçam corretamente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- viewport: faz a página se adaptar ao celular (responsividade) -->
+    <title>GreenNest — Plantas para sua casa</title>
+    <!-- title: é o texto que aparece na ABA do navegador -->
+    <link rel="stylesheet" href="estilo.css">
+    <!-- AQUI o HTML aponta para o arquivo de estilo separado -->
+</head>
+
+<body>
+    <!-- O body guarda TODO o conteúdo visível da página -->
+
+    <!-- ============ HEADER ============ -->
+    <!-- Cabeçalho: logo + menu de navegação -->
+    <header>
+        <h1 class="logo">𖤐⭒๋࣭⭑𝔊𝔬𝔱𝔥𝔏𝔦𝔣𝔢</h1>
+        <nav>
+            <!-- nav: agrupa os links de navegação do site -->
+            <a href="#hero">Início</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#depoimentos">Depoimentos</a>
+            <a href="#faq">Dúvidas</a>
+        </nav>
+    </header>
+
+    <!-- ============ HERO SECTION ============ -->
+    <!-- A primeira impressão: o que aparece sem rolar a página -->
+    <section id="hero" class="hero">
+        <div class="hero-texto">
+            <h2>𝔇𝔞𝔰 𝔱𝔯𝔢𝔳𝔞𝔰 𝔞𝔬 𝔈𝔰𝔱𝔦𝔩𝔬</h2>
+            <!-- h2 aqui, porque o h1 já foi usado no logo -->
+            <p>𝑀𝑒𝓁𝒽𝑜𝓇𝑒𝓈 𝒶𝒸𝑒𝓈𝓈𝑜𝓇𝒾𝑜𝓈 𝑔𝑜𝓉𝒾𝒸𝑜𝓈 𝓅𝒶𝓇𝒶 𝓋𝑜𝒸𝑒 𝓊𝓈𝒶𝓇 𝓃𝒶 𝓈𝓊𝒶 𝒸𝒾𝒹𝒶𝒹𝑒 𝓃𝒶𝓉𝒶𝓁</p>
+            <!-- CTA: Call to Action — o botão que converte -->
+            <a href="#produtos" class="botao-cta">Ver produtos</a>
+        </div>
+        <img src="imgs/logo.jpg"alt="coração prateado com arabescos">
+        <!-- alt é OBRIGATÓRIO: descreve a imagem para leitores de tela -->
+    </section>
+
+    <!-- ============ SHOWCASE DE PRODUTOS ============ -->
+    <!-- Vitrine: grid de cards com os produtos -->
+    <section id="produtos" class="produtos">
+        <h2>⋆˖⁺◯⋆𝔄𝔠𝔢𝔰𝔰𝔬𝔯𝔦𝔬𝔰 𝔮𝔲𝔢 𝔳𝔬𝔠𝔢𝔰 𝔦𝔯𝔞𝔬 𝔞𝔪𝔞𝔯⋆☾₊‧</h2>
+        <ul class="grade-produtos">
+            <!-- ul + li: lista semântica para os cards -->
+            <li class="card">
+                <img src="https://i.pinimg.com/736x/1a/2d/3b/1a2d3b0185b29a446cacff644f6fa2c9.jpg"
+                     alt="Luvas pretas de renda">
+                <h3>Luvas pretas de renda</h3>
+                <p>Perfeita para passeios simples</p>
+                <span class="preco">R$ 39,90</span>
+            </li>
+            <li class="card">
+                <img src="https://i.pinimg.com/736x/b8/29/96/b8299642869a7165018e7abb51902b35.jpg"
+                     alt="Chapéu preto com flores e rendas">
+                <h3>Chapéu basico</h3>
+                <p>Para dar voltinhas no parque da igreja.</p>
+                <span class="preco">R$ 59,90</span>
+            </li>
+            <li class="card">
+                <img src="https://i.pinimg.com/736x/f7/2f/46/f72f4677ebb65358ba0e9517c1534579.jpg"
+                     alt="Sombrinha de renda pequena">
+                <h3>Sombrinha preta simples</h3>
+                <p>A perfeita para manter a pele como a de um vampiro.</p>
+                <span class="preco">R$ 59,90</span>
+            </li>
+            <li class="card">
+                <img src="https://i.pinimg.com/736x/ac/5f/31/ac5f316559b84f98874cdfad0345c30f.jpg"
+                     alt="OCULOS ESTILOSO COM pinjentes">
+                <h3>Óculos com pingentes</h3>
+                <p>Chama atenção até dos seus gatos.</p>
+                <span class="preco">R$ 29,90</span>
+            </li>
+        </ul>
+    </section>
+
+    <!-- ============ PROVA SOCIAL ============ -->
+    <!-- Depoimentos: pessoas confiam em pessoas -->
+    <section id="depoimentos" class="depoimentos">
+        <h2>⋆˖⁺◯𝔐𝔢𝔩𝔥𝔬𝔯𝔢𝔰 𝔞𝔳𝔞𝔩𝔦𝔞𝔠𝔬𝔢𝔰☾₊⋆</h2>
+        <div class="grade-depoimentos">
+            <figure class="depoimento">
+                <!-- figure: marca um conteúdo ilustrativo independente -->
+                <img src="https://i.pinimg.com/736x/1b/3d/73/1b3d73ff83a51f3bc4f8b9ea8fa9c22b.jpg"
+                     alt="Foto de perfil da cliente Ana">
+                <blockquote>"Minha pele ficou mesmo mais pálida!"</blockquote>
+                <figcaption>Ana, Chapecó</figcaption>
+                <!-- figcaption: legenda da figure -->
+            </figure>
+            <figure class="depoimento">
+                <img src="https://i.pinimg.com/736x/45/96/41/4596414d9333ef650f733778576111d9.jpg"
+                     alt="Foto de perfil do cliente Bruno">
+                <blockquote>"Comprei um colar. Chegou super bem embalado."</blockquote>
+                <figcaption>Bruno, Xaxim</figcaption>
+            </figure>
+            <figure class="depoimento">
+                <img src="https://i.pinimg.com/736x/cc/96/90/cc9690c2b25a583cb568e3b22a1d9945.jpg"
+                     alt="Foto de perfil da cliente Carla">
+                <blockquote>"Atendimento ótimo"</blockquote>
+                <figcaption>Carla, Chapecó</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <!-- Acordeão NATIVO: details + summary, sem JavaScript! -->
+    <section id="faq" class="faq">
+        <h2>⋆˖⁺‧₊☽◯☾₊‧⁺˖⋆Dúvidas frequentes⋆˖⁺‧₊☽◯☾₊‧⁺˖⋆</h2>
+
+        <details>
+            <summary>Vocês entregam em toda a cidade?</summary>
+            <p>Sim! Entregamos em Chapecó e região em até 7 dias úteis.</p>
+        </details>
+
+        <details>
+            <summary>Qual é o tempo de garantia?</summary>
+            <p>Temos 2 meses. Trocamos sem custo. </p>
+        </details>
+        <details>
+            <summary>Qual é o material das rendas?</summary>
+            <p> O tipo é Renda Chantilly. Extremamente delicada e leve, de extrema qualidade. </p>
+        </details>
+
+        <details>
+            <summary>Quais são os cuidados á serem tomados com as peças?</summary>
+            <p>A renda Chantilly é extremamente delicada e rasga ou desfia com facilidade, então: </p>
+            <p>-Lave apenas à mão;</p>
+            <p>-Use sabão neutro ou suave;</p>
+            <p>-Nunca torça e seque na sombra;</p>
+            <p>Saiba mais em <a href="//www.farfetch.com/br/style-guide/como-usar/como-cuidar-das-suas-roupas-de-renda/" target="_blank">farfetch.com</a></p>
+        </details>
+
+        <details>
+            <summary>Como escolho o acessório ideal?</summary>
+            <p>Chame no WhatsApp: indicamos conforme o seu estilo e o tanto de chumbo que ha na sua base.</p>
+        </details>
+    </section>
+
+    <!-- ============ FOOTER + NEWSLETTER ============ -->
+    <!-- Rodapé: fecha a navegação com formulário de e-mail -->
+    <footer>
+        <form class="newsletter">
+            <label for="email">Receba dicas de cuidado com rendas e nossos produtos:</label>
+            <!-- label com for ligado ao id do input: acessibilidade -->
+            <input type="email" id="email" name="email"
+                   placeholder="seu@email.com" required>
+            <!-- type="email" valida o formato sozinho no navegador -->
+            <button type="submit">Cadastrar</button>
+        </form>
+        <p class="copyright">© 2026 — GothLife • Desenvolvido pela turma de Web Design</p>
+    </footer>
+
+</body>
+</html>
